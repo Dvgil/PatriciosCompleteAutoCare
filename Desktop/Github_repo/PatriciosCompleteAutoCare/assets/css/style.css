@@ -1,0 +1,419 @@
+* { margin: 0;
+         padding: 0;
+          box-sizing: border-box; 
+          font-family: yellowtail;
+         }
+
+
+
+
+
+/* SECTION */
+.pin-section {
+  padding: 60px 20px;
+  background: #111;
+  color: #fff;
+}
+
+/* HEADER */
+.services-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.services-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.services-header p {
+  max-width: 700px;
+  margin: auto;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* BUTTON LIST */
+.list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.service-btn {
+  background: #1f1f1f;
+  padding: 12px 22px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+
+.service-btn:hover,
+.service-btn.active {
+  background: #fff;
+  color: #111;
+}
+
+/* SERVICE CONTENT */
+.service-content {
+  display: none;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.service-content.active {
+  display: flex;
+}
+
+/* SLIDES */
+.slide {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+/* DESCRIPTION */
+.description {
+  flex: 1;
+}
+
+.description h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.description p {
+  color: #ccc;
+  line-height: 1.7;
+}
+
+/* IMAGE */
+.slide img {
+  width: 50%;
+  max-width: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .services-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .slide {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .slide img {
+    width: 100%;
+  }
+
+  .description h2 {
+    font-size: 1.5rem;
+  }
+
+  .service-btn {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
+}
+ 
+    
+    /* NAVBAR */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 25px 50px;
+  z-index: 1000;
+}
+
+/* LEFT + RIGHT NAVS */
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex: 1;
+}
+
+.nav-left {
+  justify-content: flex-end;
+  padding-right: 80px;
+}
+
+.nav-right {
+  justify-content: flex-start;
+  padding-left: 80px;
+}
+
+/* LINKS */
+.nav-left a,
+.nav-right a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+  opacity: 0.7;
+}
+
+/* CENTER LOGO */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 140px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* MOBILE BUTTON */
+.menu-trigger {
+  display: none;
+  position: absolute;
+  right: 25px;
+
+  background: transparent;
+  border: none;
+  color: black;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1200;
+}
+
+/* MOBILE OVERLAY */
+.mobile-overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.96);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: 0.4s ease;
+  z-index: 1100;
+}
+
+/* ACTIVE MENU */
+.mobile-overlay.is-active {
+  opacity: 1;
+  visibility: visible;
+  
+}
+
+/* MOBILE MENU */
+.mobile-menu-container {
+  text-align: center;
+}
+
+.mobile-menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.mobile-menu-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 900px) {
+
+  /* HIDE DESKTOP NAV */
+  .nav-left,
+  .nav-right {
+    display: none;
+  }
+
+  /* KEEP LOGO CENTERED */
+  .header {
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  /* SHOW MENU BUTTON */
+  .menu-trigger {
+    display: block;
+  }
+
+  .menu-trigger .is-active{
+    color:white;
+  }
+}
+/* HERO SECTION */
+.hero-section {
+  min-height: 100vh;
+  background: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+  padding: 120px 20px 40px;
+}
+
+/* HERO CONTENT */
+.hero-content {
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+.hero-content h1 {
+  font-size: 5rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: black;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: auto auto 35px;
+}
+
+/* BUTTON */
+.hero-btn {
+  display: inline-block;
+  padding: 14px 34px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* INSURANCE SECTION */
+.insurance-section {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.insurance-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaa;
+}
+
+/* LOGO CAROUSEL */
+.scrolling-text {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.rail {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  width: max-content;
+  animation: scroll 70s linear infinite;
+}
+
+/* ALL LOGOS SAME SIZE */
+.rail img {
+  width: 140px;
+  height: 70px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.9;
+  transition: 0.3s ease;
+}
+
+.rail img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* SLOW INFINITE SCROLL */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+  .hero-section {
+    padding-top: 100px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .rail {
+    gap: 40px;
+    animation-duration: 35s;
+  }
+
+  .rail img {
+    width: 100px;
+    height: 50px;
+  }
+
+  .insurance-title {
+    font-size: 1rem;
+  }
+}
+
+/* insurance carouselle  */
