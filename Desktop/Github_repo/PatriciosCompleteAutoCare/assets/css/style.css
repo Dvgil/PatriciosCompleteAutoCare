@@ -416,4 +416,77 @@
   }
 }
 
-/* insurance carouselle  */
+/* FOOTER */
+.footer {
+  background: white;
+  color: black;
+  padding: 70px 40px 30px;
+}
+
+/* CONTAINER */
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 50px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* COLUMNS */
+.footer-column h3 {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.footer-column p,
+.footer-column a {
+  color: #bdbdbd;
+  line-height: 1.8;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+/* LINKS */
+.footer-column a:hover {
+  color: red;
+}
+
+/* SOCIAL LINKS */
+.footer-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  border-top: 1px solid white;
+  margin-top: 50px;
+  padding-top: 25px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: black;
+  font-size: 0.9rem;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 900px) {
+
+  .footer {
+    padding: 60px 25px 25px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .footer-socials {
+    align-items: center;
+  }
+
+}
