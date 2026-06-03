@@ -9,7 +9,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 <script src="/assets/js/animation.js" defer></script> 
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Observer.min.js"></script> --> 
 
 </head>
 <body>
@@ -60,101 +64,91 @@
 
 <section class="hero-section">
 
-  <section class="timeline-section">
-
-    <h2>Our Journey</h2>
-
-    <div class="timeline-carousel">
-
-        <div class="timeline-wrapper">
-
-            <div class="timeline-track" id="timelineTrack">
-
-                <!-- 2005 -->
-                <div class="timeline-slide" data-year="2005">
-
-                    <div class="timeline-image">
-                        <img src="/assets/images/story-1.jpg" alt="">
-                    </div>
-
-                    <div class="timeline-content">
-                        <h3>Company Founded</h3>
-
-                        <p>
-                            We started our journey with a commitment to
-                            providing honest automotive repairs and
-                            exceptional customer service.
-                        </p>
-                    </div>
-
-                </div>
-
-                <!-- 2012 -->
-                <div class="timeline-slide" data-year="2012">
-
-                    <div class="timeline-image">
-                        <img src="/assets/images/story-2.jpg" alt="">
-                    </div>
-
-                    <div class="timeline-content">
-                        <h3>Facility Expansion</h3>
-
-                        <p>
-                            Added new repair bays, paint booths, and
-                            advanced collision repair equipment.
-                        </p>
-                    </div>
-
-                </div>
-
-                <!-- 2020 -->
-                <div class="timeline-slide" data-year="2020">
-
-                    <div class="timeline-image">
-                        <img src="/assets/images/IMG_7570.jpg" alt="">
-                    </div>
-
-                    <div class="timeline-content">
-                        <h3>Insurance Partnerships</h3>
-
-                        <p>
-                            Expanded our services and began working with
-                            major insurance providers throughout California.
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Timeline -->
-        <div class="timeline-progress">
-
-            <div class="timeline-year" id="timelineYear">
-                2005
-            </div>
-
-            <div class="timeline-indicator">
-
-                <div class="timeline-line"></div>
-
-                <div class="timeline-circle"></div>
-
-                <div class="timeline-line"></div>
-
-            </div>
-
-        </div>
-
+  <div class="content">
+    <div class="content__hero">
+      <h1 class="content__heading gs_reveal">We've been in service for over 35 Years<br></h1>
+      <p class="content__description gs_reveal">
+        Learn how our company has grown from a small repair shop to a trusted collision center
+           
+      </p> 
+          
     </div>
-
-</section>
-
-</section>
     
+  
+    <div class="features">
+  
+      <div class="features__item features__item--left gs_reveal gs_reveal_fromLeft">
+        <div class="features__image">
+          <div class="features__card">
+            <img class="features__img" src="https://assets.codepen.io/16327/portrait-image-14.jpg" alt="">
+          </div>
+        </div>
+        <div class="features__content">
+          <h2 class="features__title gs_reveal">1991</h2>
+          <p class="features__description gs_reveal">
+            Patricios Mufflers was estableship in the hearth of van nuys<br>
+            a small independent mechanic shop providing basic reapirs services <br>
+            for the people in van nuys. A small crew but very family oriented<br>
+          </p>
+        </div>
+      </div>
+  
+      <div class="features__item features__item--right gs_reveal gs_reveal_fromRight">
+        <div class="features__image">
+          <div class="features__card">
+            <img class="features__img" src="https://assets.codepen.io/16327/portrait-image-4.jpg" alt="">
+          </div>
+        </div>
+        <div class="features__content">
+          <h2 class="features__title gs_reveal">2020</h2>
+          <p class="features__description gs_reveal">
+            Patricios Mufflers got a re brand<br>
+            with more work coming throught the years, a rebrand updated the name  <br>
+            and the looks but not the great service provide to the people<br>
+            Body collision reapirs and painting jobs were added to the services
+          </p>
+        </div>
+      </div>
+  
+      <div class="features__item features__item--left gs_reveal gs_reveal_fromLeft">
+        <div class="features__image">
+          <div class="features__card">
+            <img class="features__img" src="https://assets.codepen.io/16327/portrait-image-3.jpg" alt="">
+          </div>
+        </div>
+        <div class="features__content">
+          <h2 class="features__title gs_reveal">2026</h2>
+          <p class="features__description gs_reveal">
+            After many years of great service, a expansion was manage throught hard work <br>
+            and dedication. two locations were estableship with the hope to bring more oportunities<br>
+            
+          </p>
+        </div>
+      </div>
+  
+      <div class="features__item features__item--right gs_reveal gs_reveal_fromRight">
+        <div class="features__image">
+          <div class="features__card">
+            <img class="features__img" src="https://assets.codepen.io/16327/portrait-image-1.jpg" alt="">
+          </div>
+        </div>
+        <div class="features__content">
+          <h2 class="features__title gs_reveal">Future</h2>
+          <p class="features__description gs_reveal">
+            The great dedication to bring a great service throught the years have made <br>
+            Patricios Complete auto care been in service for many years<br>
+            With the trust people and business have place in the shop<br>
+            more oportunities will come   
+          </p>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <div class="spacer"></div>
 
+    
+</section>
 <!-- FOOTER -->
 <footer class="footer">
 
