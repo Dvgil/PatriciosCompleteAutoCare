@@ -1,8 +1,3 @@
-:root{
-  --High:font-family: "Oleo Script", system-ui;
-  --Low: font-family: "Neuton", serif;
-
-}
 
 * { margin: 0;
          padding: 0;
@@ -122,32 +117,6 @@
     
 
 
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-
-  .services-header h1 {
-    font-size: 2.2rem;
-  }
-
-  .slide {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .slide img {
-    width: 100%;
-  }
-
-  .description h2 {
-    font-size: 1.5rem;
-  }
-
-  .service-btn {
-    font-size: 0.9rem;
-    padding: 10px 16px;
-  }
 }
  
     
@@ -280,34 +249,7 @@
   font-family: "Neuton", serif;
 }
 
-/* MOBILE VIEW */
-@media (max-width: 900px) {
 
-  /* HIDE DESKTOP NAV */
-  .nav-left,
-  .nav-right {
-    display: none;
-  }
-
-  /* KEEP LOGO CENTERED */
-  .header {
-    justify-content: center;
-    padding: 20px;
-  }
-
-  .logo {
-    width: 120px;
-  }
-
-  /* SHOW MENU BUTTON */
-  .menu-trigger {
-    display: block;
-  }
-
-  .menu-trigger .is-active{
-    color:white;
-  }
-}
 /* HERO SECTION */
 .hero-section {
   min-height: 100vh;
@@ -360,9 +302,9 @@
   border-radius: 40px;
   font-weight: 600;
   transition: 0.3s ease;
-  text-transform:uppercase ;
   
-   font-family: "Oleo Script", system-ui;
+  
+    font-family: sans-serif;
 }
 
 .hero-btn:hover {
@@ -382,10 +324,8 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaa;
+     font-family: sans-serif;
 
-  
-     font-family: "Neuton", serif; 
-font-weight: 700;
 }
 
 /* LOGO CAROUSEL */
@@ -429,35 +369,7 @@ font-weight: 700;
   }
 }
 
-/* MOBILE RESPONSIVE */
-@media (max-width: 768px) {
 
-  .hero-section {
-    padding-top: 100px;
-  }
-
-  .hero-content h1 {
-    font-size: 2.8rem;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
-  }
-
-  .rail {
-    gap: 40px;
-    animation-duration: 35s;
-  }
-
-  .rail img {
-    width: 100px;
-    height: 50px;
-  }
-
-  .insurance-title {
-    font-size: 1rem;
-  }
-}
 
 
 /* CONTACT SECTION */
@@ -469,6 +381,8 @@ font-weight: 700;
   padding: 100px 60px;
  
   color: black;
+   
+  
 }
 
 /* LEFT SIDE */
@@ -477,14 +391,18 @@ font-weight: 700;
   letter-spacing: 2px;
   margin-bottom: 20px;
   font-size: 0.9rem;
-   
+  border-bottom: 2px solid #721c24;
+  
+    
 }
 
 .contact-info h2 {
   font-size: 3.5rem;
   line-height: 1.1;
   margin-bottom: 25px;
+   font-family: "Oleo Script", system-ui;
   
+   
 }
 
 .contact-description {
@@ -492,11 +410,14 @@ font-weight: 700;
   line-height: 1.8;
   margin-bottom: 50px;
   max-width: 500px;
+   font-family: sans-serif;
+   font-size: 600;
 }
 
 /* CONTACT ITEMS */
 .contact-item {
   margin-bottom: 30px;
+   font-family: sans-serif;
 }
 
 .contact-item span {
@@ -504,6 +425,7 @@ font-weight: 700;
   color: black;
   margin-bottom: 8px;
   font-size: 0.9rem;
+  
 }
 
 .contact-item a {
@@ -522,11 +444,13 @@ font-weight: 700;
   display: flex;
   flex-direction: column;
   gap: 20px;
+   font-family: sans-serif;
+  
 }
 
 /* FAQ ITEM */
 .faq-item {
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  
   padding-bottom: 20px;
 }
 
@@ -551,12 +475,14 @@ font-weight: 700;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease;
+  
 }
 
 .faq-answer p {
   color: black;
   line-height: 1.7;
   padding-bottom: 10px;
+  
 }
 
 /* ACTIVE FAQ */
@@ -564,20 +490,7 @@ font-weight: 700;
   max-height: 300px;
 }
 
-/* MOBILE */
-@media (max-width: 900px) {
 
-  .contact-section {
-    grid-template-columns: 1fr;
-    padding: 70px 25px;
-    gap: 50px;
-  }
-
-  .contact-info h2 {
-    font-size: 2.5rem;
-  }
-
-}
 
 .content {
   max-width: 1240px;
@@ -679,6 +592,7 @@ font-weight: 700;
   padding: 70px 40px 30px;
 }
 
+
 /* CONTAINER */
 .footer-container {
   display: grid;
@@ -686,9 +600,9 @@ font-weight: 700;
   gap: 50px;
   max-width: 1400px;
   margin: auto;
-  font-family: "Neuton", serif;
+ font-family: sans-serif;
   font-weight: 800;
-  
+  background-color: #f9f9f9;
 }
 
 /* COLUMNS */
@@ -696,6 +610,7 @@ font-weight: 700;
   font-size: 1.1rem;
   margin-bottom: 20px;
   letter-spacing: 1px;
+  
 }
 
 .footer-column p,
@@ -731,24 +646,7 @@ font-weight: 700;
   font-size: 0.9rem;
 }
 
-/* MOBILE VIEW */
-@media (max-width: 900px) {
 
-  .footer {
-    padding: 60px 25px 25px;
-  }
-
-  .footer-container {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    text-align: center;
-  }
-
-  .footer-socials {
-    align-items: center;
-  }
-
-}
 
 .Service-section {
   max-width: 1400px;
@@ -770,7 +668,7 @@ font-weight: 700;
   color: #777;
   margin-bottom: 20px;
   text-transform: uppercase;
-  
+  font-family: sans-serif;
 }
 
 /* BIG HEADING */
@@ -780,6 +678,7 @@ font-weight: 700;
   font-weight: 700;
   margin: 0;
  text-align: left;
+ font-family: "Oleo Script", system-ui;
 }
 
 /* DESCRIPTION */
@@ -791,12 +690,14 @@ font-weight: 700;
   border-top: 2px solid #111;
   padding-top: 20px;
   margin-top: 20px;
+  font-family: sans-serif;
 }
 
 .showcase-content h2 {
   font-size: 3.5rem;
   margin: 15px 0 25px;
   line-height: 1.1;
+  
 }
 
 .showcase-content p {
@@ -832,10 +733,12 @@ font-weight: 700;
 
 .info-card {
   padding: 1.5rem;
+
 }
 
 .info-card h3 {
   margin-bottom: .75rem;
+  font-family: "Oleo Script", system-ui;
 }
 
 
@@ -843,6 +746,7 @@ font-weight: 700;
 .info-card p {
   line-height: 1.6;
   color: #666;
+  font-family: sans-serif;
 }
 
 .showcase-section {
@@ -863,18 +767,21 @@ font-weight: 700;
   letter-spacing: 2px;
   color: #777;
   font-size: .9rem;
+  font-family: sans-serif;
 }
 
 .showcase-content h2 {
   font-size: 3.5rem;
   margin: 15px 0 25px;
   line-height: 1.1;
+  font-family: "Oleo Script", system-ui;
 }
 
 .showcase-content p {
   line-height: 1.8;
   color: #666;
   max-width: 550px;
+  font-family: sans-serif;
 }
 
 /* RIGHT */
@@ -905,11 +812,355 @@ font-weight: 700;
   opacity: 1;
 }
 
+
+
+
+.about-section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 120px 40px;
+
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    gap: 80px;
+
+    align-items: center;
+}
+
+/* IMAGE */
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* CONTENT */
+
+.about-label {
+    display: inline-block;
+    margin-bottom: 15px;
+  
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #777;
+    font-size: .9rem;
+}
+.about-content {
+    padding-top: 60px;
+    
+    
+}
+
+.about-content h2 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1.1;
+    margin-bottom: 30px;
+    font-family: "Oleo Script", system-ui;
+}
+
+.about-content p {
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+/* VISION & MISSION */
+
+.about-grid {
+    margin-top: 50px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.about-card {
+    padding-top: 20px;
+    border-top: 2px solid #000;
+}
+
+.about-card h3 {
+    margin-bottom: 15px;
+    font-family: "Oleo Script", system-ui;
+}
+
+
+
+.locations-section {
+    max-width: 1400px;
+    margin: auto;
+    padding: 120px 40px;
+}
+
+.section-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 80px;
+    padding-top: 20px;
+}
+
+.section-header span {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #777;
+    font-family: sans-serif;
+}
+
+.section-header h2 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin: 20px 0;
+    font-family: "Oleo Script", system-ui;
+}
+
+.section-header p{
+  font-family: sans-serif
+}
+
+.location-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+
+    margin-bottom: 100px;
+
+    align-items: center;
+}
+
+.location-card.reverse .location-image {
+    order: 2;
+}
+
+.location-card.reverse .location-content {
+    order: 1;
+}
+
+.location-image img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+}
+
+.location-tag {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    color: #777;
+    font-family: sans-serif;
+}
+
+.location-content h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: "Oleo Script", system-ui;
+}
+
+.location-content p {
+    line-height: 1.8;
+    color: #666;
+    font-family: sans-serif;
+}
+
+.location-details {
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: sans-serif;
+}
+
+.location-details a {
+    color: inherit;
+    text-decoration: none;
+    
+}
+
+.location-buttons {
+    margin-top: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.location-buttons a {
+    text-decoration: none;
+
+    padding: 12px 20px;
+
+    border: 1px solid #000;
+    border-radius: 999px;
+
+    color: #000;
+
+    transition: .3s;
+}
+
+.location-buttons a:hover {
+    background: #000;
+    color: #fff;
+}
+
+.hours-list {
+  list-style: none;
+  padding: 0;
+  margin-right: 250px;
+  color: #aaa;
+  
+}
+
+.hours-list li {
+  display: flex;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 4px;
+  
+
+}
+
+.hours-list li span:first-child {
+  width: 85px;
+  font-weight: 600;
+}
+
+/* Base Layout */
+.hours-container {
+  max-width: 100%;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  font-family: sans-serif;
+}
+
+.hours-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Status Badge Styles */
+.status-badge {
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.status-badge.open {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge.closed {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.status-badge.checking {
+  background-color: #e2e3e5;
+  color: #383d41;
+}
+
+/* List Formatting */
+.hours-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hours-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.hours-item:last-child {
+  border-bottom: none;
+}
+
+/* Dynamic Highlight for Current Day */
+.hours-item.current-day {
+  background-color: #e8f4fd;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.hours-item.closed .time {
+  color: #d9534f;
+}
+
 /* MOBILE */
+@media (max-width: 900px) {
 
-@media (max-width: 768px) {
+  .services-header h1 {
+    font-size: 2.2rem;
+  }
+ 
+ .slide {
+    flex-direction: column;
+    text-align: center;
+  }
+  .slide img {
+    width: 100%;
+  }
 
-  .showcase-section {
+  .description h2 {
+    font-size: 1.5rem;
+  }
+
+  .service-btn {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
+
+
+ .about-section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 80px 20px;
+    }
+
+     .about-image {
+        padding-top: 30px;
+    }
+
+    .about-image {
+        order: 1;
+    }
+
+    .about-content {
+        order: 2;
+        text-align: center;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card {
+        text-align: left;
+    }
+
+
+ .showcase-section {
       grid-template-columns: 1fr;
       gap: 40px;
       padding: 80px 20px;
@@ -957,225 +1208,6 @@ font-weight: 700;
   
  text-align: center;
 }
-}
-
-
-.about-section {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 120px 40px;
-
-    display: grid;
-    grid-template-columns: 450px 1fr;
-    gap: 80px;
-
-    align-items: center;
-}
-
-/* IMAGE */
-
-.about-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-image img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    object-fit: contain;
-}
-
-/* CONTENT */
-
-.about-label {
-    display: inline-block;
-    margin-bottom: 15px;
-  
-    letter-spacing: 2px;
-    text-transform: uppercase;
-
-    color: #777;
-    font-size: .9rem;
-}
-.about-content {
-    padding-top: 60px;
-}
-
-.about-content h2 {
-    font-size: clamp(2.5rem, 5vw, 4.5rem);
-    line-height: 1.1;
-    margin-bottom: 30px;
-}
-
-.about-content p {
-    line-height: 1.8;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-/* VISION & MISSION */
-
-.about-grid {
-    margin-top: 50px;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-}
-
-.about-card {
-    padding-top: 20px;
-    border-top: 2px solid #000;
-}
-
-.about-card h3 {
-    margin-bottom: 15px;
-}
-
-/* MOBILE */
-
-@media (max-width: 768px) {
-
-    .about-section {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        padding: 80px 20px;
-    }
-
-     .about-image {
-        padding-top: 30px;
-    }
-
-    .about-image {
-        order: 1;
-    }
-
-    .about-content {
-        order: 2;
-        text-align: center;
-    }
-
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .about-card {
-        text-align: left;
-    }
-
-}
-
-.locations-section {
-    max-width: 1400px;
-    margin: auto;
-    padding: 120px 40px;
-}
-
-.section-header {
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto 80px;
-    padding-top: 20px;
-}
-
-.section-header span {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #777;
-}
-
-.section-header h2 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    margin: 20px 0;
-}
-
-.location-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-
-    margin-bottom: 100px;
-
-    align-items: center;
-}
-
-.location-card.reverse .location-image {
-    order: 2;
-}
-
-.location-card.reverse .location-content {
-    order: 1;
-}
-
-.location-image img {
-    width: 100%;
-    border-radius: 20px;
-    display: block;
-}
-
-.location-tag {
-    display: inline-block;
-
-    margin-bottom: 15px;
-
-    text-transform: uppercase;
-    letter-spacing: 1px;
-
-    color: #777;
-}
-
-.location-content h3 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.location-content p {
-    line-height: 1.8;
-    color: #666;
-}
-
-.location-details {
-    margin-top: 30px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.location-details a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.location-buttons {
-    margin-top: 30px;
-
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.location-buttons a {
-    text-decoration: none;
-
-    padding: 12px 20px;
-
-    border: 1px solid #000;
-    border-radius: 999px;
-
-    color: #000;
-
-    transition: .3s;
-}
-
-.location-buttons a:hover {
-    background: #000;
-    color: #fff;
-}
-
-@media (max-width: 768px) {
 
   .section-header{
     padding-top: 60px;
@@ -1202,23 +1234,144 @@ font-weight: 700;
         text-align: center;
     }
 
+    .hours-list{
+      display: flex;
+      justify-content: center;
+    }
+    /* HIDE DESKTOP NAV */
+  .nav-left,
+  .nav-right {
+    display: none;
+  }
+
+  /* KEEP LOGO CENTERED */
+  .header {
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  /* SHOW MENU BUTTON */
+  .menu-trigger {
+    display: block;
+  }
+
+  .menu-trigger .is-active{
+    color:white;
+  }
+   .hero-section {
+    padding-top: 100px;
+  }
+  .hero-content{
+    padding-top: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .rail {
+    gap: 40px;
+    animation-duration: 35s;
+  }
+
+  .rail img {
+    width: 100px;
+    height: 50px;
+  }
+
+  .insurance-title {
+    font-size: 1rem;
+  }
+
+  
+  .contact-section {
+    grid-template-columns: 1fr;
+    padding: 70px 25px;
+    gap: 50px;
+  }
+
+  .contact-info h2 {
+    font-size: 2.5rem;
+  }
+  .footer {
+    padding: 60px 25px 25px;
+  }
+ 
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .footer-socials {
+    align-items: center;
+  }
+
+  .hours-container {
+  width: 100%;
+  max-width: 280px; /* Slim width to guarantee a perfect vertical fit */
+  margin: 0 auto;
+  padding: 0.75rem;
+  
+  
+  box-sizing: border-box;
+  }
+
+  .hours-header{
+    display: flex;
+  flex-direction: column; /* Stacks header elements vertically */
+  align-items: center;
+   gap: 0.35rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed #e0e0e0;
+
+  }
+  .hours-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+}
+  .hours-item {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
 }
 
+  .status-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+} 
 .hours-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  color: #aaa;
-}
-
-.hours-list li {
   display: flex;
-  font-size: 0.95rem;
-  line-height: 1.4;
-  margin-bottom: 4px;
+  flex-direction: column;
+  align-items: center;
+}
+  .hours-item:last-child {
+  border-bottom: none;
 }
 
-.hours-list li span:first-child {
-  width: 85px;
-  font-weight: 600;
+.day {
+  margin-bottom: 0.15rem; /* Space between day and time */
 }
+
+
+}
+

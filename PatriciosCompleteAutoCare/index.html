@@ -226,20 +226,46 @@
 
     <!-- TIME -->
    <div class="footer-column">
-
-  <h3>Operation Hours</h3>
+    <div class="hours-container">
+  <h3 class="hours-title">Hours of Operation</h3>
+  
+  <!-- Live Status Badge Container -->
+  <div id="status-badge" class="status-badge checking">Checking status...</div>
 
   <ul class="hours-list">
-    <li><span>Monday</span> <span>8:00 AM - 6:00 PM</span></li>
-    <li><span>Tuesday</span> <span>8:00 AM - 6:00 PM</span></li>
-    <li><span>Wednesday</span> <span>8:00 AM - 6:00 PM</span></li>
-    <li><span>Thursday</span> <span>8:00 AM - 6:00 PM</span></li>
-    <li><span>Friday</span> <span>8:00 AM - 6:00 PM</span></li>
-    <li><span>Saturday</span> <span>Closed</span></li>
-    <li><span>Sunday</span> <span>Closed</span></li>
+    <li class="hours-item" id="day-1">
+      <span class="day">Monday</span>
+      <span class="time">8:00 AM - 6:00 PM</span>
+    </li>
+    <li class="hours-item" id="day-2">
+      <span class="day">Tuesday</span>
+      <span class="time">8:00 AM - 6:00 PM</span>
+    </li>
+    <li class="hours-item" id="day-3">
+      <span class="day">Wednesday</span>
+      <span class="time">8:00 AM - 6:00 PM</span>
+    </li>
+    <li class="hours-item" id="day-4">
+      <span class="day">Thursday</span>
+      <span class="time">8:00 AM - 6:00 PM</span>
+    </li>
+    <li class="hours-item" id="day-5">
+      <span class="day">Friday</span>
+      <span class="time">8:00 AM - 6:00 PM</span>
+    </li>
+    <li class="hours-item closed" id="day-0">
+      <span class="day">Saturday</span>
+      <span class="time">Closed</span>
+    </li>
+    <li class="hours-item closed" id="day-0">
+      <span class="day">Sunday</span>
+      <span class="time">Closed</span>
+    </li>
   </ul>
-
 </div>
+
+ 
+</div> 
     <!-- PHONE -->
     <div class="footer-column">
       <h3>Phone</h3>
@@ -272,7 +298,7 @@
 
   <!-- BOTTOM -->
   <div class="footer-bottom">
-    <p>© 2026 Phoenix Auto Collision. All Rights Reserved.Created by <a href="https://google.com" target="_blank">Diego Vigil</a></p>
+    <p>&copy; <span id="year"></span>  Patricios Complete Auto Care. All Rights Reserved. Created by <a href="https://www.linkedin.com/in/diegosv0598" target="_blank">Diego Vigil</a></p>
   </div>
 
 </footer>

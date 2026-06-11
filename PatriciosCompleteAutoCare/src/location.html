@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
 <script src="/assets/js/animation.js" defer></script>
   
  
@@ -93,16 +93,16 @@
 
                 <div>
                     <strong>Phone</strong>
-                    <a href="tel:+18185551234">
-                        (818) 555-1234
+                    <a href="tel:+18189391114">
+                        (818) 939-1114
                     </a>
                 </div>
 
                 <div>
                     <strong>Address</strong>
                     <p>
-                        8533 Columbus Ave<br>
-                        North Hills, CA
+                        8552 Sepulveda Blvd,<br>
+                         North Hills, CA 91343
                     </p>
                 </div>
 
@@ -111,13 +111,14 @@
             <div class="location-buttons">
 
                 <a
-                  href="https://maps.google.com/?q=8533+Columbus+Ave+North+Hills+CA"
+                  href="https://maps.app.goo.gl/uNaHqcB3nAniut9C6"
                   target="_blank">
                     Google Maps
                 </a>
 
                 <a
-                  href="https://maps.apple.com/?q=8533+Columbus+Ave+North+Hills+CA"
+                  href="https://maps.apple.com/place?address=8552%20N%20Sepulveda%20Blvd,%20North%20Hills,%20CA%20%2091343,%20United%20States&coordinate=34.226146,-118.467423&name=Patricio's%20Complete%20Auto%20Care&place-id=ID077E42EA014CA45&map=explore
+"
                   target="_blank">
                     Apple Maps
                 </a>
@@ -153,16 +154,16 @@
 
                 <div>
                     <strong>Phone</strong>
-                    <a href="tel:+18185555678">
-                        (818) 555-5678
+                    <a href="tel:+18183215137">
+                        (818) 321-5137
                     </a>
                 </div>
 
                 <div>
                     <strong>Address</strong>
                     <p>
-                        Stagg St<br>
-                        North Hills, CA
+                       7755 Sepulveda Blvd Unit 5<br>
+                      Van Nuys, CA 91405
                     </p>
                 </div>
 
@@ -171,13 +172,13 @@
             <div class="location-buttons">
 
                 <a
-                  href="https://maps.google.com/?q=Phoenix+Auto+Collision+North+Hills+CA"
+                  href="https://maps.app.goo.gl/SiDDxqZDFsc6QsHS6"
                   target="_blank">
                     Google Maps
                 </a>
 
                 <a
-                  href="https://maps.apple.com/?q=Phoenix+Auto+Collision+North+Hills+CA"
+                  href="https://maps.apple.com/place?coordinate=34.211797,-118.467082&name=Marked%20Location&map=explore"
                   target="_blank">
                     Apple Maps
                 </a>
@@ -196,63 +197,88 @@
 
 </section>
 
-</section>    <!-- FOOTER -->
+</section> 
+<!-- FOOTER -->
 <footer class="footer">
 
-    <div class="footer-container">
-  
-       <!-- TIME -->
-   <div class="footer-column">
+  <div class="footer-container">
 
-  <h3>Operation Hours</h3>
+    <!-- TIME -->
+   <div class="footer-column">
+    <div class="hours-container">
+  <h3 class="hours-title">Hours of Operation</h3>
+  
+  <!-- Live Status Badge Container -->
+  <div id="status-badge" class="status-badge checking">Checking status...</div>
 
   <ul class="hours-list">
-    <li><span>Monday</span> <span>8:00 AM - 6:00 PM</span></li>
-    <li><span>Tuesday</span> <span>8:00 AM - 6:00 PM</span></li>
-    <li><span>Wednesday</span> <span>8:00 AM - 6:00 PM</span></li>
-    <li><span>Thursday</span> <span>8:00 AM - 6:00 PM</span></li>
-    <li><span>Friday</span> <span>8:00 AM - 6:00 PM</span></li>
-    <li><span>Saturday</span> <span>Closed</span></li>
-    <li><span>Sunday</span> <span>Closed</span></li>
+    <li class="hours-item" id="day-1">
+      <span class="day">Monday</span>
+      <span class="time">8:00 AM - 6:00 PM</span>
+    </li>
+    <li class="hours-item" id="day-2">
+      <span class="day">Tuesday</span>
+      <span class="time">8:00 AM - 6:00 PM</span>
+    </li>
+    <li class="hours-item" id="day-3">
+      <span class="day">Wednesday</span>
+      <span class="time">8:00 AM - 6:00 PM</span>
+    </li>
+    <li class="hours-item" id="day-4">
+      <span class="day">Thursday</span>
+      <span class="time">8:00 AM - 6:00 PM</span>
+    </li>
+    <li class="hours-item" id="day-5">
+      <span class="day">Friday</span>
+      <span class="time">8:00 AM - 6:00 PM</span>
+    </li>
+    <li class="hours-item closed" id="day-0">
+      <span class="day">Saturday</span>
+      <span class="time">Closed</span>
+    </li>
+    <li class="hours-item closed" id="day-0">
+      <span class="day">Sunday</span>
+      <span class="time">Closed</span>
+    </li>
   </ul>
-
 </div>
-  
-      <!-- PHONE -->
-      <div class="footer-column">
-        <h3>Phone</h3>
-  
-        <a href="tel:+13235551234">(323) 555-1234</a>
-      </div>
-  
-      <!-- ADDRESS -->
-      <div class="footer-column">
-        <h3>Location</h3>
-  
-        <p>
-          1234 Main Street <br>
-          Los Angeles, CA 90001
-        </p>
-      </div>
-  
-      <!-- SOCIALS -->
-      <div class="footer-column">
-        <h3>Connect</h3>
-  
-        <div class="footer-socials">
-          <a href="https://facebook.com" target="_blank">Facebook</a>
-          <a href="https://yelp.com" target="_blank">Yelp</a>
-          <a href="https://google.com" target="_blank">Google Reviews</a>
-        </div>
-      </div>
-  
+
+ 
+</div> 
+    <!-- PHONE -->
+    <div class="footer-column">
+      <h3>Phone</h3>
+
+      <a href="tel:+18189391114">(818) 939-1114</a>
     </div>
-  
-    <!-- BOTTOM -->
-    <div class="footer-bottom">
-      <p>© 2026 Phoenix Auto Collision. All Rights Reserved.Created by <a href="https://google.com" target="_blank">Diego Vigil</a></p>
+
+    <!-- ADDRESS -->
+    <div class="footer-column">
+      <h3>Location</h3>
+
+      <p>
+        8552 Sepulveda Blvd, <br>
+        North Hills, CA 91343
+      </p>
     </div>
-  
+
+    <!-- SOCIALS -->
+    <div class="footer-column">
+      <h3>Connect</h3>
+
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/patricioscompleteautocare/" target="_blank">Facebook</a>
+        <a href="https://yelp.com/biz/patricios-complete-auto-care-north-hills-2" target="_blank">Yelp</a>
+        <a href="https://www.google.com/search?q=patricio%27s+complete+auto+care+reviews&client=firefox-b-1-d&hs=HAyp&sca_esv=fd9128bd119c9691&sxsrf=ANbL-n7NyiPXxO5DbQQUFgK0OyG3gjc6Sw%3A1779925476490&ei=5IEXatTTHY7PkPIPpp2wkA8&oq=patricios+complete+auto+care+re&gs_lp=Egxnd3Mtd2l6LXNlcnAiH3BhdHJpY2lvcyBjb21wbGV0ZSBhdXRvIGNhcmUgcmUqAggAMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBTIFEAAY7wVIvxhQhgtY9g1wAXgAkAEAmAFdoAHOAqoBATS4AQHIAQD4AQGYAgSgAtwCwgIREC4YgAQYxwEYrwEYsAMYjgXCAg4QABiABBiKBRiGAxiwA8ICCBAAGO8FGLADwgICECaYAwCIBgGQBgeSBwMxLjOgB4IXsgcDMC4zuAfQAsIHBTMtMy4xyAc7gAgB&sclient=gws-wiz-serp#" target="_blank">Google Reviews</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span>  Patricios Complete Auto Care. All Rights Reserved. Created by <a href="https://www.linkedin.com/in/diegosv0598" target="_blank">Diego Vigil</a></p>
+  </div>  
   </footer>
 </body>
 </html>
